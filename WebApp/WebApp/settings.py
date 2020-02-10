@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'faceofnepal',
     'Login',
+    'face_of_nepal_Relationship'
 ]
 
 MIDDLEWARE = [
