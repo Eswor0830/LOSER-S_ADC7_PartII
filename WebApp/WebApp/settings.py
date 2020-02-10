@@ -60,7 +60,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             'faceofnepal/template',
-            'Login/template'
+            'Login/template',
+            'templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -126,6 +127,11 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
 
 
